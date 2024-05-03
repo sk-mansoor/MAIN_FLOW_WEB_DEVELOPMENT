@@ -1,0 +1,26 @@
+body{
+    background-color:antiquewhite;
+}
+h1,h2{
+    text-align: center;
+}
+h3{
+    text-decoration: underline;
+}
+table,thead,th,td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color:blue;
+    text-decoration: underline;
+}
+.Thank-You{
+    text-align: center;
+}
