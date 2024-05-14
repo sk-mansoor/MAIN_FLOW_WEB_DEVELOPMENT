@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+.Name{
+    background-color: rgb(221, 194, 143);
+    display: flex;
+    padding: 5px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    justify-content: center;
+}
+body{
+    margin: 0;
+}
+.Swami{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    border: 2px solid rgb(244, 205, 75);
+    display: inline-block;
+    width: 20%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.5s ease;
+}
+a:hover{
+    color: #ff6716;
+    text-decoration: underline;
+}
+h1{
+    font-family: "David Libre", serif;
+    font-weight: 1000;
+    font-size: 70px;
+}
+.Birth, .Education,.Teaching,.Influence,.Works,.Death{
+    transition: all 1s ease;
+    border: 1px solid gold;
+    border-radius: 7px;
+    background-color: skyblue;
+    margin: 13px 1.75%;
+    padding: 1px 12px;
+    display: inline-block;
+    width: 27.9%;
+}
+.footer{
+    display: flex;
+    background-color: gray;
+    margin-top: 10px;
+    line-height: 0.5cm;
+    justify-content: center;
+}
+.footer div p{
+    margin-left: 27%;
+    margin-top: 0;
+}
+.Birth:hover,.Education:hover,.Teaching:hover,.Influence:hover,
+.Works:hover,.Death:hover{
+    transform: scale(1.10);
+}
+
+@media (max-width: 978px){
+    .Name{
+        background-color: rgb(221, 194, 143);
+        display: flex;
+        padding: 5px;
+        margin-bottom: 10px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    img{
+        width: 51%;
+        margin: auto;
+    }
+    .Swami{
+        margin: auto;
+    }
+    .Birth, .Education,.Teaching,.Influence,.Works,.Death{
+        transition: all 1s ease;
+        border: 1px solid gold;
+        border-radius: 7px;
+        background-color: skyblue;
+        margin: 13px 9%;
+        padding: 1px 12px;
+        display: inline-block;
+        width: 80.9%;
+    }
+}
+@media (max-width: 500px){
+    h1{
+        font-size: 40px;
+    }
+    .Name{
+        width: 100%;
+    }
+    .footer{
+        width: 100%;
+    }
+    .Birth, .Education,.Teaching,.Influence,.Works,.Death{
+        width: 94%;
+        margin: 2px 0;
+        padding: 10px;
+    }
+    .Birth:hover,.Education:hover,.Teaching:hover,.Influence:hover,
+    .Works:hover,.Death:hover{
+        transform: scale(1);
+    }
+}
